@@ -23,6 +23,26 @@
     padding-right: 170px;
 }
 
+.navbar.changed-nav{
+    background-color: #fff;
+}
+
+.navbar.changed-nav .navbar-brand{
+    color: black;
+}
+
+.navbar.changed-nav .navbar-link{
+    color: black;
+}
+
+.navbar.changed-nav .navbar-brand:hover{
+    color: #f4623a;
+}
+
+.navbar.navbar.changed-nav .navbar-link:hover{
+    color: #f4623a;
+}
+
 .navbar-brand, .nav-link{
     color: rgba(255, 255, 255, 0.7) !important;
     font-weight: 700;

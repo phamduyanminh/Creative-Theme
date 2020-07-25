@@ -24,8 +24,6 @@ h1, h2, h3, h4, h5{
 *Wrapper Body*
 */
 .wrapper-body{
-    padding-left: 200px;
-    padding-right: 200px;
     text-align: center;
     align-items: center;
     width: 100%;
@@ -90,6 +88,8 @@ h1, h2, h3, h4, h5{
 .wgwyn-wrapper-body{
     height: 400px;
     background-color: #f4623a;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .wgwyn-h2{
@@ -124,6 +124,8 @@ h1, h2, h3, h4, h5{
 .ays-wrapper-body{
     height: 500px;
     background-color: #fff;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .ays-h2{
