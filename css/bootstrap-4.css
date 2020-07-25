@@ -25,6 +25,7 @@
 
 .navbar.changed-nav{
     background-color: #fff;
+    transition: 0.3s;
 }
 
 .navbar.changed-nav .navbar-brand{
