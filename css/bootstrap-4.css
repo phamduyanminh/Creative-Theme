@@ -28,19 +28,19 @@
 }
 
 .navbar.changed-nav .navbar-brand{
-    color: black;
+    color: black !important;
 }
 
-.navbar.changed-nav .navbar-link{
-    color: black;
+.navbar.changed-nav .nav-link{
+    color: black !important;
 }
 
 .navbar.changed-nav .navbar-brand:hover{
-    color: #f4623a;
+    color: #f4623a !important;
 }
 
-.navbar.navbar.changed-nav .navbar-link:hover{
-    color: #f4623a;
+.navbar.changed-nav .nav-link:hover{
+    color: #f4623a !important;
 }
 
 .navbar-brand, .nav-link{
