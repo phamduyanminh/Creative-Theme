@@ -1,9 +1,22 @@
 /*
+*Button*
+*/
+.btn{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 60px;
+    width: 180px;
+    border: none;
+    border-radius: 50px;
+}
+
+/*
 *Naviagtion Bar*
 */
 .navbar{
-    /* background-color: transparent; */
-    background-color: black;
+    background-color: transparent;
     z-index: 1 !important;
     height: 80px;
     padding-left: 170px;
