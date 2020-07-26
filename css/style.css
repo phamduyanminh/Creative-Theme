@@ -27,7 +27,6 @@ h1, h2, h3, h4, h5{
     text-align: center;
     align-items: center;
     width: 100%;
-    transform: translateY(50%);
 }
 
 /*
@@ -47,9 +46,20 @@ h1, h2, h3, h4, h5{
 .master-header{
     background: url(../pictures/background-business-computer-connection-303383.jpg);
     width: 100%; 
-    height: 700px;
-    padding-left: 180px;
-    padding-right: 180px;
+    height: 600px;
+    padding-left: 280px;
+    padding-right: 280px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.sub-header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
 }
 
 .header-h1{
@@ -58,23 +68,19 @@ h1, h2, h3, h4, h5{
     text-transform: uppercase;
     font-size: 3rem;
     text-align: center;
-    transform: translateY(100%);
 }
 
 .header-hr{
     background-color: #f4623a;
-    transform: translateY(4000%);
 }
 
 .header-para{
     font-size: 1.3rem;
-    transform: translateY(300%);
 }
 
 .header-btn{
     color: #fff;
     background-color: #f4623a;
-    transform: translate(250%, 370%);
 }
 
 .header-btn:hover{
@@ -86,31 +92,29 @@ h1, h2, h3, h4, h5{
 *We've got what you need Section*
 */
 .wgwyn-wrapper-body{
-    height: 400px;
     background-color: #f4623a;
     padding-left: 300px;
     padding-right: 300px;
+    height: 300px;
+    padding-top: 3%;
+    padding-bottom: 5%;
 }
 
 .wgwyn-h2{
     color: #fff;
-    transform: translateY(300%);
 }
 
 .wgwyn-hr{
     background-color: #fff;
-    transform: translateY(3800%);
 }
 
 .wgwyn-para{
     font-size: 1.1rem;
-    transform: translateY(220%);
 }
 
 .wgwyn-btn{
     color: black;
     background-color: #fff;
-    transform: translateY(200%);
 }
 
 .wgwyn-btn:hover{
@@ -122,32 +126,30 @@ h1, h2, h3, h4, h5{
 *At Your Service Section*
 */
 .ays-wrapper-body{
-    height: 500px;
     background-color: #fff;
     padding-left: 200px;
     padding-right: 200px;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 
 .ays-h2{
     color: black;
-    transform: translateY(300%);
 }
 
 .ays-hr{
     background-color: #f4623a;
-    transform: translateY(3800%);
 }
 
 .ays-span-wrapper{
     display: flex;
     justify-content: space-between;
-    transform: translateY(35%);
 }
 
 .ays-item-container{
     position: relative;
     width: 250px;
-    height: 500px;
+    height: 240px;
 }
 
 .ays-item-header{
@@ -170,4 +172,80 @@ h1, h2, h3, h4, h5{
 
 .ays-para{
     color: gray;
+}
+
+/*
+*Portfolio Section*
+*/
+
+.portfolio-row{
+    display: flex;
+}
+
+.portfolio-item-wrapper{
+    max-width: 33.33333333%;
+    text-align: center;
+    position: relative;
+}
+
+.portfolio-item{
+    width: 100%;
+}
+
+.portfolio-item-hover .portfolio-item {
+    visibility: hidden;
+    position: absolute;
+    transform: translate(0%, 0%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .1s;
+    background-color: #f4623a;
+}
+
+.portfolio-item-hover:hover .portfolio-item {
+    visibility: visible;
+    opacity: 1;
+}
+
+.portfolio-h4{
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.portfolio-h3{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+/*
+*Free Download Section*
+*/
+.fd-wrapper-body{
+    background-color: #343a40;
+    padding-left: 300px;
+    padding-right: 300px;
+    height: 300px;
+    padding-top: 6%;
+    padding-bottom: 5%;
+}
+
+.fd-h2{
+    color: #fff;
+    padding-bottom: 3%;
+}
+
+.fd-btn{
+    color: black;
+    background-color: #fff;
+}
+
+.fd-btn:hover{
+    color: black;
+    background-color: #D6CFD7;
 }
