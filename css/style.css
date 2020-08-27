@@ -192,35 +192,44 @@ h1, h2, h3, h4, h5{
     width: 100%;
 }
 
-.portfolio-item-hover .portfolio-item {
-    visibility: hidden;
+.portfolio-item-hover{
     position: absolute;
-    transform: translate(0%, 0%);
     top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     height: 100%;
+    width: 100%;
     opacity: 0;
-    transition: all .1s;
+    transition: .5s ease;
     background-color: #f4623a;
 }
 
-.portfolio-item-hover:hover .portfolio-item {
+.portfolio-item-wrapper:hover .portfolio-item-hover{
     visibility: visible;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .portfolio-h4{
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
     color: gray;
+    transform: translateY(330%);
 }
 
 .portfolio-h3{
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 400;
     color: #fff;
+    transform: translateY(200%);
+}
+
+.portfolio-h4 .portfolio-h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
 }
 
 /*
@@ -275,7 +284,8 @@ h1, h2, h3, h4, h5{
 .git-span-wrapper{
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 30px
+    ;
 }
 
 .git-item-container{
@@ -295,9 +305,19 @@ h1, h2, h3, h4, h5{
     height: 50px;
 }
 
-.git-h3{
+.git-h3, .git-h3a{
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5;
+}
+
+.git-h3a{
+    color: #f4623a !important;
+}
+
+.git-h3a:hover{
+    color: sienna !important;
+    text-decoration: underline !important;
+    cursor: pointer !important;
 }
